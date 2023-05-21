@@ -1,5 +1,6 @@
 import { getUser } from "@/lib/auth"
 import Image from "next/image"
+import Link from "next/link"
 
 
 export const Profile = () => {
@@ -17,9 +18,11 @@ export const Profile = () => {
       <p className="text-sm leading-snug max-w-[140px]">
         {name}
         <a
-          href=""
+          href="/api/auth/logout"
           className="block text-red-400 hover:text-red-300"
-        >Quero sair</a>
+        >
+          Quero sair
+        </a>
       </p>
     </div>
 
